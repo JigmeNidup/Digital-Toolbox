@@ -34,7 +34,13 @@ export default function RootLayout({ children }) {
             </div>
           </Link>
         </header>
-        {children}
+        <main className="min-h-screen">{children}</main>
+        <footer className="bg-gray-800 text-white py-8">
+          {/* Copyright */}
+          <div className="border-t border-gray-700 pt-6 text-center text-gray-400">
+            <p>&copy; {new Date().getFullYear()} DT. All rights reserved.</p>
+          </div>
+        </footer>
       </body>
     </html>
   );

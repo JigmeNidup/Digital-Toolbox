@@ -29,14 +29,26 @@ const Home = () => {
       icon: "/images/remove_bg.png",
       href: "/remove_bg",
     },
+    // {
+    //   name: "Sign PDF",
+    //   description: "Add Signature to PDF",
+    //   icon: "/images/remove_bg.png",
+    //   href: "/sign_pdf",
+    // },
   ];
 
   return (
     <div className="font-sans">
-      {/* Main Content */}
-      <main className="container mx-auto p-4">
+      <div className="container mx-auto p-4">
         <section className="text-center py-12">
           <h1 className="text-4xl font-bold mb-4">Digital Tools</h1>
+          <p>
+            🔒 Worried about uploading your files just to merge PDFs? 😨 Fear
+            not! 🤗 <br /> This web app does ALL the magic—merging PDFs,
+            converting images to PDFs, and more—RIGHT on your device! 💻✨{" "}
+            <br /> 🚫 No files are uploaded to any server—your data stays 100%
+            private! <br /> 🔐 Merge with confidence! ✨📂➡️📘
+          </p>
         </section>
 
         {/* Tools Grid */}
@@ -61,7 +73,7 @@ const Home = () => {
             </Link>
           ))}
         </div>
-      </main>
+      </div>
     </div>
   );
 };
